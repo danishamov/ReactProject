@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function Header() {
     return (
         <header>
@@ -7,9 +9,9 @@ export default function Header() {
                         <div className="col-md-6">
                             <div className="full">
                                 <div className="logo">
-                                    <a href="/">
+                                    <Link to="/">
                                         <img src="images/logo.png" alt="#" />
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
@@ -33,17 +35,33 @@ export default function Header() {
                                 {/* button section */}
                                 <ul className="login">
                                     <li className="login-modal">
-                                        <a href="#" className="login">
+                                        <Link to="/login" className="login">
                                             <i className="fa fa-user" />
                                             Login
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li>
                                         <div className="cart-option">
-                                            <a href="#">
+                                            <Link to="/register">
                                                 <i className="fa fa-shopping-cart" />
                                                 Register
-                                            </a>
+                                            </Link>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div className="cart-option">
+                                            <Link to="/logout">
+                                                <i className="fa fa-shopping-cart" />
+                                                Logout
+                                            </Link>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div className="cart-option">
+                                            <Link to="/profile">
+                                                <i className="fa fa-shopping-cart" />
+                                                My profile
+                                            </Link>
                                         </div>
                                     </li>
                                 </ul>
@@ -83,185 +101,38 @@ export default function Header() {
                                             <div className="collapse navbar-collapse js-navbar-collapse">
                                                 <ul className="nav navbar-nav">
                                                     <li className="active">
-                                                        <a href="/">Home</a>
+                                                        <Link to="/">Home</Link>
                                                     </li>
                                                     <li>
-                                                        <a href="/about">
+                                                        <Link to="/about">
                                                             About
-                                                        </a>
+                                                        </Link>
                                                     </li>
                                                     <li>
-                                                        <a href="/team">Team</a>
+                                                        <Link to="/team">
+                                                            Team
+                                                        </Link>
                                                     </li>
                                                     <li>
-                                                        <a href="/news">News</a>
+                                                        <Link to="/news">
+                                                            News
+                                                        </Link>
                                                     </li>
-                                                    <li className="dropdown mega-dropdown">
-                                                        <a
-                                                            href="/match"
-                                                            className="dropdown-toggle"
-                                                            data-toggle="dropdown"
-                                                        >
-                                                            Match
-                                                            <span className="caret" />
-                                                        </a>
-                                                        <ul className="dropdown-menu mega-dropdown-menu">
-                                                            <li className="col-sm-8">
-                                                                <ul>
-                                                                    <li className="dropdown-header">
-                                                                        Men
-                                                                        Collection
-                                                                    </li>
-                                                                    <div
-                                                                        id="menCollection"
-                                                                        className="carousel slide"
-                                                                        data-ride="carousel"
-                                                                    >
-                                                                        <div className="carousel-inner">
-                                                                            <div className="item active">
-                                                                                <div className="banner-for-match">
-                                                                                    <a href="#">
-                                                                                        <img
-                                                                                            className="img-responsive"
-                                                                                            src="images/match-banner1.jpg"
-                                                                                            alt="#"
-                                                                                        />
-                                                                                    </a>
-                                                                                </div>
-                                                                            </div>
-                                                                            {/* End Item */}
-                                                                            <div className="item">
-                                                                                <div className="banner-for-match">
-                                                                                    <a href="#">
-                                                                                        <img
-                                                                                            className="img-responsive"
-                                                                                            src="images/match-banner1.jpg"
-                                                                                            alt="#"
-                                                                                        />
-                                                                                    </a>
-                                                                                </div>
-                                                                            </div>
-                                                                            {/* End Item */}
-                                                                            <div className="item">
-                                                                                <div className="banner-for-match">
-                                                                                    <a href="#">
-                                                                                        <img
-                                                                                            className="img-responsive"
-                                                                                            src="images/match-banner1.jpg"
-                                                                                            alt="#"
-                                                                                        />
-                                                                                    </a>
-                                                                                </div>
-                                                                            </div>
-                                                                            {/* End Item */}
-                                                                        </div>
-                                                                        {/* End Carousel Inner */}
-                                                                        {/* Controls */}
-                                                                        <a
-                                                                            className="left carousel-control"
-                                                                            href="#menCollection"
-                                                                            role="button"
-                                                                            data-slide="prev"
-                                                                        >
-                                                                            <span
-                                                                                className="glyphicon glyphicon-chevron-left"
-                                                                                aria-hidden="true"
-                                                                            />
-                                                                            <span className="sr-only">
-                                                                                Previous
-                                                                            </span>
-                                                                        </a>
-                                                                        <a
-                                                                            className="right carousel-control"
-                                                                            href="#menCollection"
-                                                                            role="button"
-                                                                            data-slide="next"
-                                                                        >
-                                                                            <span
-                                                                                className="glyphicon glyphicon-chevron-right"
-                                                                                aria-hidden="true"
-                                                                            />
-                                                                            <span className="sr-only">
-                                                                                Next
-                                                                            </span>
-                                                                        </a>
-                                                                    </div>
-                                                                    {/* /.carousel */}
-                                                                </ul>
-                                                            </li>
-                                                            <li className="col-sm-4">
-                                                                <ul className="menu-inner">
-                                                                    <li className="dropdown-header">
-                                                                        Next
-                                                                        Matchs
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="#">
-                                                                            Contrary
-                                                                            vs
-                                                                            classical
-                                                                        </a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="#">
-                                                                            Discovered
-                                                                            vs
-                                                                            undoubtable
-                                                                        </a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="#">
-                                                                            Contrary
-                                                                            vs
-                                                                            classical
-                                                                        </a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="#">
-                                                                            Discovered
-                                                                            vs
-                                                                            undoubtable
-                                                                        </a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="#">
-                                                                            Contrary
-                                                                            vs
-                                                                            classical
-                                                                        </a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="#">
-                                                                            Discovered
-                                                                            vs
-                                                                            undoubtable
-                                                                        </a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="#">
-                                                                            Contrary
-                                                                            vs
-                                                                            classical
-                                                                        </a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="#">
-                                                                            Discovered
-                                                                            vs
-                                                                            undoubtable
-                                                                        </a>
-                                                                    </li>
-                                                                </ul>
-                                                            </li>
-                                                        </ul>
+
+                                                    <li>
+                                                        <Link to="/blog">
+                                                            Blog
+                                                        </Link>
                                                     </li>
                                                     <li>
-                                                        <a href="/blog">Blog</a>
+                                                        <Link to="/shop">
+                                                            Shop
+                                                        </Link>
                                                     </li>
                                                     <li>
-                                                        <a href="/contact">
-                                                            contact
-                                                        </a>
+                                                        <Link to="/contact">
+                                                            Contact
+                                                        </Link>
                                                     </li>
                                                 </ul>
                                             </div>

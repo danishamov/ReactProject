@@ -162,27 +162,6 @@ export default function TopSection() {
                 </a>
             </div>
             {/* /.carousel */}
-            <div className="news">
-                <div className="container">
-                    <div className="heading-slider">
-                        <p className="headline">
-                            <i className="fa fa-star" aria-hidden="true" /> Top
-                            Headlines :
-                        </p>
-                        {/*made by vipul mirajkar thevipulm.appspot.com*/}
-                        <h1>
-                            <a
-                                href=""
-                                className="typewrite"
-                                data-period={2000}
-                                data-type='[ "Contrary to popular belief, Lorem Ipsum is not simply random text.", "Lorem Ipsum is simply dummy text of the printing and typesetting industry.", "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."]'
-                            >
-                                <span className="wrap" />
-                            </a>
-                        </h1>
-                    </div>
-                </div>
-            </div>
         </div>
     );
 }

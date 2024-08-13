@@ -1,6 +1,10 @@
 export default function About() {
     return (
         <div className="aboutus">
+            <div className="inner-page-banner">
+                <div className="container"></div>
+            </div>
+
             <div className="container">
                 <div className="row">
                     <div className="col-md-12 col-sm-12">

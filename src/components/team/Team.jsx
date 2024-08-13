@@ -1,6 +1,10 @@
 export default function Team() {
     return (
         <div className="row">
+            <div className="inner-page-banner">
+                <div className="container"></div>
+            </div>
+
             <div className="container">
                 <div className="col-md-3 column">
                     <div className="card">

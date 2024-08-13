@@ -1,6 +1,10 @@
 export default function Blog() {
     return (
         <div className="row">
+            <div className="inner-page-banner">
+                <div className="container"></div>
+            </div>
+
             <div className="container">
                 <div className="col-md-9">
                     <div className="feature-post">

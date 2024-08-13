@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function Footer() {
     return (
         <footer id="footer" className="footer">
@@ -7,12 +9,12 @@ export default function Footer() {
                         <div className="full">
                             <div className="footer-widget">
                                 <div className="footer-logo">
-                                    <a href="#">
+                                    <Link to="/">
                                         <img
                                             src="images/footer-logo.png"
                                             alt="#"
                                         />
-                                    </a>
+                                    </Link>
                                 </div>
                                 <p>
                                     Most of our events have hard and easy route
@@ -25,19 +27,10 @@ export default function Footer() {
                                             <i className="fa fa-facebook" />
                                         </a>
                                     </li>
-                                    <li>
-                                        <a className="twitter" href="#">
-                                            <i className="fa fa-twitter" />
-                                        </a>
-                                    </li>
+
                                     <li>
                                         <a className="youtube" href="#">
                                             <i className="fa fa-youtube-play" />
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a className="pinterest" href="#">
-                                            <i className="fa fa-pinterest-p" />
                                         </a>
                                     </li>
                                 </ul>
@@ -50,22 +43,20 @@ export default function Footer() {
                                 <h3>Menu</h3>
                                 <ul className="footer-menu">
                                     <li>
-                                        <a href="about.html">About Us</a>
+                                        <Link to="/about">About Us</Link>
                                     </li>
                                     <li>
-                                        <a href="team.html">Our Team</a>
+                                        <Link to="/team">Our Team</Link>
                                     </li>
                                     <li>
-                                        <a href="news.html">Latest News</a>
+                                        <Link to="/news">Latest News</Link>
+                                    </li>
+
+                                    <li>
+                                        <Link to="/blog">Our Blog</Link>
                                     </li>
                                     <li>
-                                        <a href="matche.html">Recent Matchs</a>
-                                    </li>
-                                    <li>
-                                        <a href="blog.html">Our Blog</a>
-                                    </li>
-                                    <li>
-                                        <a href="contact.html">Contact Us</a>
+                                        <Link to="/contact">Contact Us</Link>
                                     </li>
                                 </ul>
                             </div>

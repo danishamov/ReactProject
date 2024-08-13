@@ -1,6 +1,10 @@
 export default function Contact() {
     return (
         <div className="row">
+            <div className="inner-page-banner">
+                <div className="container"></div>
+            </div>
+
             <div className="container">
                 <div className="contact">
                     <div className="col-md-12">

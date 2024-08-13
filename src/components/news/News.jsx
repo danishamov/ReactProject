@@ -1,6 +1,10 @@
 export default function News() {
     return (
         <div className="container">
+            <div className="inner-page-banner">
+                <div className="container"></div>
+            </div>
+
             <div className="row">
                 <div className="col-lg-9 col-sm-12 col-xs-12">
                     <div className="news-post-holder">
