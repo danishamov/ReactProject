@@ -9,41 +9,44 @@ import Header from "./components/header/Header";
 import About from "./components/about/About";
 import News from "./components/news/News";
 import Blog from "./components/blog/Blog";
+import Login from "./components/Login/Login";
+import Register from "./components/register/Register";
 
 function App() {
     return (
         <>
-            <>
-                {/* LOADER */}
-                {/* <div id="preloader">
+            {/* LOADER */}
+            {/* <div id="preloader">
                     <img
                         className="preloader"
                         src="images/loading-img.gif"
                         alt=""
                     />
                 </div> */}
-                {/* END LOADER */}
+            {/* END LOADER */}
 
-                <Header />
+            <Header />
 
-                <Routes>
-                    <Route path="/" element={<Home />} />
-                    <Route path="/team" element={<Team />} />
-                    <Route path="/about" element={<About />} />
-                    <Route path="/news" element={<News />} />
-                    <Route path="/contact" element={<Contact />} />
-                    <Route path="/blog" element={<Blog />} />
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/team" element={<Team />} />
+                <Route path="/about" element={<About />} />
+                <Route path="/news" element={<News />} />
+                <Route path="/contact" element={<Contact />} />
+                <Route path="/blog" element={<Blog />} />
 
-                    <Route path="/info" element={<MatchInfo />} />
-                    <Route path="/video" element={<Video />} />
-                </Routes>
-                <Footer />
-                <a href="#home" data-scroll="" className="dmtop global-radius">
-                    <i className="fa fa-angle-up" />
-                </a>
-                {/* ALL JS FILES */}
-                {/* ALL PLUGINS */}
-            </>
+                <Route path="/info" element={<MatchInfo />} />
+                <Route path="/video" element={<Video />} />
+                <Route path="/login" element={<Login />} />
+                <Route path="/register" element={<Register />} />
+            </Routes>
+
+            <Footer />
+            <a href="#home" data-scroll="" className="dmtop global-radius">
+                <i className="fa fa-angle-up" />
+            </a>
+            {/* ALL JS FILES */}
+            {/* ALL PLUGINS */}
         </>
     );
 }
